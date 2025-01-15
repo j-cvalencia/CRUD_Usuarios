@@ -1,8 +1,8 @@
 import { Tabla } from "./Components/Tabla/Tabla";
 import { Modal } from "./Components/Modal/Modal";
-import './App.css'
-import data from "./data.json";
 import { useState } from "react";
+import data from './data.json'
+import './App.css'
 
 function App() {
   const [usuarios, setUsuarios] = useState(data);
@@ -13,9 +13,10 @@ function App() {
       apellidos: "Rodríguez Pérez",
       correo: "AnaMaria123@gmail.com",
     };
-
+  
     setUsuarios([...usuarios, nuevoUsuario]);
   }
+  
   return (
     <>
       <Modal/>
