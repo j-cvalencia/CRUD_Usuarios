@@ -1,0 +1,14 @@
+table{
+  color: rgb(83, 83, 83);
+  width: 100%;
+  user-select: none;
+  border-collapse: collapse;
+}
+th{
+  border-bottom: 1.5px solid gray;
+  text-align: left;
+}
+td{
+  border-bottom: 1.5px solid gray;
+  padding: 5px 0px;
+}

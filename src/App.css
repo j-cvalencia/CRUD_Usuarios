@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+  padding: 10vh 15px 0;
+}
+.titulo{
+  position: relative;
+  height: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+.titulo button{
+  background-color: blueviolet;
+  border: none;
+  width: 2em;
+  height: 2em;
+  border-radius: 10px;
+  font-weight: 200;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  left: 10%;
+  color: white;
+}
+.titulo h1{
+  text-align: center;
+  font-size: 4.5rem;
+  color: rgb(83, 83, 83);
+}
