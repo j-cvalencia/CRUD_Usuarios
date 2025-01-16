@@ -1,11 +1,11 @@
 import React from 'react'
 
-export const Button = ({texto,backgroundColor,textColor,margin}) => {
+export const Button = ({texto,backgroundColor,textColor,margin,padding,funcion}) => {
   return (
-    <button style={{
+    <button onClick={funcion} style={{
       backgroundColor: backgroundColor,
       border:"none",
-      padding:"5px 10px",
+      padding: padding,
       margin: margin,
       color: textColor,
       cursor: "pointer"
