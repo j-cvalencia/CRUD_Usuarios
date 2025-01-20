@@ -1,8 +1,8 @@
 import { useForm } from 'react-hook-form'
 import { ButtonCerrar } from '../ButtonCerrar/ButtonCerrar';
-import './Modal.css'
+import './Modal2.css'
 
-export const Modal = ({funcion,display,funcionCerrar}) => {
+export const Modal2 = ({funcion,display,funcionCerrar}) => {
   const {register,handleSubmit,reset,formState:{errors}}=useForm({
     defaultValues: {
       nombre: '',
@@ -18,31 +18,31 @@ export const Modal = ({funcion,display,funcionCerrar}) => {
     <div id='fondoModal' style={{display: display}}>
       <div id='modal'>
         <ButtonCerrar top={'-10px'} right={'-10px'} funcion={funcionCerrar}/>
-        <h2>Agregar</h2>
+        <h2>Editar</h2>
         <form onSubmit={handleSubmit(onSubmit)}>
           <input type="text" placeholder='Nombre' {...register('nombre',{
             required: {
-              value: true,
-              message :'El nombre es obligatorio'
+              value: false,
             }
           })}/>
           {errors.nombre && <span>{errors.nombre.message}</span>}
           <input type="text" placeholder='Apellido' {...register('apellido', {
             required:{
-              value: true,
-              message: 'El apellido es obligatorio'
+              value: false
             }
           })}/>
           {errors.apellido && <span>{errors.apellido.message}</span>}
           <input type="text" placeholder='Correo'  {...register('correo', {
-            required: 'El email es obligatorio',
+            required: {
+              value: false
+            },
             pattern: {
               value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
               message: 'Formato de email inválido',
             },
           })}/>
           {errors.correo && <span>{errors.correo.message}</span>}
-          <button type="submit">Agregar</button>
+          <button type="submit">Actualizar</button>
         </form>
       </div>
     </div>

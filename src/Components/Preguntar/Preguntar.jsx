@@ -8,7 +8,7 @@ export const Preguntar = ({pregunta,display,fbtn1,fbtn2}) => {
         <h2>{pregunta}</h2>
         <div id="botones">
           <Button backgroundColor={'blueviolet'} textColor={'white'} texto={'Si'} padding={'5px 10px'} funcion={fbtn1}/>
-          <Button backgroundColor={'red'} textColor={'white'} texto={'No'} padding={'5px 10px'}/>
+          <Button backgroundColor={'red'} textColor={'white'} texto={'No'} padding={'5px 10px'} funcion={fbtn2}/>
         </div>
       </div>
     </div>

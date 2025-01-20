@@ -12,3 +12,51 @@ td{
   border-bottom: 1.5px solid gray;
   padding: 5px 0px;
 }
+.accion{
+  white-space: nowrap;
+  width: 10%;
+}
+button{
+  padding: 5px 10px;
+  font-size: 0.8em;
+  margin: 2px;
+}
+
+/*RESPONSIVE
+=================================================================
+Escritorios muy grandes
+-----------------------------------------------------------------*/
+@media (min-width: 1200px) { }
+
+/*Tablets en horizontal y escritorios normales
+-----------------------------------------------------------------*/
+@media (min-width: 760px) and (max-width: 1199px) { }
+
+/*Moviles en horizontal o tablets en vertical
+-----------------------------------------------------------------*/
+@media (max-width: 767px) { 
+  table{
+    font-size: 0.8em;
+  }
+  button{
+    padding: 3px 8px;
+    font-size: 0.8em;
+    margin: 1px;
+  }
+}
+
+/*Moviles en vertical
+-----------------------------------------------------------------*/
+@media (max-width: 480px){ 
+  table{
+    font-size: 0.6em;
+  }
+  th{
+    text-align: center;
+  }
+  button{
+    padding: 3px 6px;
+    font-size: 0.8em;
+    margin: 1px;
+  }
+}

@@ -32,4 +32,58 @@ body{
   text-align: center;
   font-size: 4.5rem;
   color: rgb(83, 83, 83);
+  white-space: nowrap;
+}
+
+/*RESPONSIVE
+=================================================================
+Escritorios muy grandes
+-----------------------------------------------------------------*/
+@media (min-width: 1200px) { 
+
+}
+
+/*Tablets en horizontal y escritorios normales
+-----------------------------------------------------------------*/
+@media (min-width: 760px) and (max-width: 1199px) {
+  .titulo button{
+    left: 5%;
+  }
+  .titulo h1{
+    font-size: 3.5rem;
+  }
+}
+
+/*Moviles en horizontal o tablets en vertical
+-----------------------------------------------------------------*/
+@media (max-width: 767px) { 
+  .titulo button{
+    left: 0;
+    width: 1.5em;
+    height: 1.5em;
+  }
+  .titulo h1{
+    font-size: 2.5rem;
+  }
+}
+
+/*Moviles en vertical
+-----------------------------------------------------------------*/
+@media (max-width: 500px){
+  body{
+    padding: 5vh 5px 0;
+  }
+  .titulo{
+    justify-content: center;
+  }
+  .titulo h1{
+    font-size: 2rem;
+    text-align: end;
+  }
+}
+
+@media (max-width: 390px){
+  .titulo h1{
+    font-size: 1.5rem;
+  }
 }

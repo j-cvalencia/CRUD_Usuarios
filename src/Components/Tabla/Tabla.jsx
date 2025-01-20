@@ -1,7 +1,7 @@
 import { Button } from '../Button/Button'
 import './Tabla.css'
 
-export const Tabla = ({data,setData,fbtn1,fbtn2}) => {
+export const Tabla = ({data,fbtn1,fbtn2}) => {
 
   return (
     <table>
@@ -19,13 +19,13 @@ export const Tabla = ({data,setData,fbtn1,fbtn2}) => {
           data.map((item)=>{
             return( 
               <tr key={item.id}>
-                <td>{item.id}</td>
-                <td>{item.nombre}</td>
-                <td>{item.apellidos}</td>
-                <td>{item.correo}</td>
+                <td width={'5%'}>{item.id}</td>
+                <td width={'30%'}>{item.nombre}</td>
+                <td width={'30%'}>{item.apellido}</td>
+                <td width={'25%'}>{item.correo}</td>
                 <td className='accion'>
-                  <Button texto={'Actualizar'} backgroundColor={'blueviolet'} textColor={'white'} margin={'0 10px 0 0'} padding={'5px 10px'} />
-                  <Button texto={'Eliminar'} backgroundColor={'red'} textColor={'white'} margin={'0 0px 0 10px'} padding={'5px 10px'} funcion={fbtn2} />
+                  <Button texto={'Editar'} backgroundColor={'blueviolet'} textColor={'white'}  funcion={fbtn1}/>
+                  <Button texto={'Eliminar'} backgroundColor={'red'} textColor={'white'}   funcion={fbtn2} />
                 </td>
               </tr>
             )
